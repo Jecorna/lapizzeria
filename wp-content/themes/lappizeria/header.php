@@ -8,10 +8,13 @@
     <?php wp_head() ?>
   </head>
   <body>
-      <header calss="encabezado-ditio">
+      <header calss="encabezado-sitio">
           <div class="contenedor">
               <div class="logo">
+                <a href="<?php echo esc_url( home_url('/') ); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg">
-                  </div>
-              </div>
+                </a>
+              </div><!--/logo -->
+
+            </div><!-- /contenedor -->
           </header>

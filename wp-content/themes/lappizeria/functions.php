@@ -19,7 +19,7 @@ function lapizzeria_styles(){
  function lapizzeria_menus(){
    register_nav_menus(array(
      'header-menu' => __('Header Menu','lapizzeria'),
-     'social-menu' => __('Social Menu','lapizzeria')
+     'social-menu' => __('Social Menu','lapizzeria')//'social-menu' es un team loaction que nada mas lee la computadora
    ));
 
  }

@@ -38,8 +38,13 @@
 
 
           </header>
-          <div class="contenedor">
-            <div class="contenedor-navegacion">
+          <div class="menu-principal">
+            <div class="mobile-menu">
+              <a href="#" class="mobile">Menu<i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+            <div class="contenedor navegacion">
               <?php
                 $args = array (
                   'theme_location' => 'header-menu', // que menu quiero que imprima
@@ -48,5 +53,5 @@
                 );// argumentos que se le pasan a la funcion
                 wp_nav_menu ( $args );
                ?>
-            </div>
+
           </div><!-- /contenedor -->

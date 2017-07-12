@@ -36,33 +36,8 @@ div.logo{
 img.logotipo{
   width: 250px;
 }
-@media only screen and (min-width:768px){
-  div.logo{
-    text-align: center;
 
-  }
-  header.encabezado-sitio .contenedor{
-    position: relative;
-  }
-  .informacion-encabezado{
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  div.direccion p{
-    text-align: right;
-  }
-  nav.sociales ul{
-    float: right;
-  }
 
-}
-@media only screen and (min-width:992px){
-  div.logo{
-    text-align: center;
-
-  }
-}
 /*** menu redes sociales ***/
 nav.sociales ul{
   text-align: center;
@@ -117,7 +92,76 @@ div.direccion p{
     padding: 0;
     width: 100%;
   }
+  nav.menu-sitio ul li a{
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+  }
+nav.menu-sitio ul li:hover{
+      background-color: #071b40;
+    }
+nav.menu-sitio ul li a:hover{
+            color: white;
+      }
+nav.menu-sitio ul li.current_page_item a{
+  border-bottom: 8px solid #a61206;
+}
+nav.menu-sitio{
+  display: none;
+}
+
+/** Medias Querys */
+@media only screen and (min-width:768px){
+  div.logo{
+    text-align: center;
+  }
   nav.menu-sitio ul li{
     display: table-cell;
     width: 1%;
   }
+  header.encabezado-sitio .contenedor{
+    position: relative;
+  }
+  .informacion-encabezado{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  div.direccion p{
+    text-align: right;
+  }
+  nav.sociales ul{
+    float: right;
+  }
+  nav.menu-sitio{
+    display: block;
+  }
+  .mobile-menu a {
+    display: none;
+  }
+}/**** /Display 768 */
+@media only screen and (min-width:992px){
+  div.logo{
+    text-align: center;
+
+  }
+}/* /Media 992 */
+@media only screen and (max-width:767px){
+.mobile-menu a {
+  height: 40px;
+  background-color: #a61206;
+  width: 100%;
+  color: white!important;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+}/* /Media 767 */

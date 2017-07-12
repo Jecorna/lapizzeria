@@ -27,6 +27,7 @@ html{
 /** Encabezadp **/
 header.encabezado-sitio {
   border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 30px;
 }
 div.logo{
   text-align: left;
@@ -54,6 +55,7 @@ img.logotipo{
   nav.sociales ul{
     float: right;
   }
+
 }
 @media only screen and (min-width:992px){
   div.logo{
@@ -72,7 +74,7 @@ nav.sociales ul li {
   display: inline-block;
 }
 nav.sociales ul li a:before{
-  font-family: 'FontAwasome';
+  font-family: 'FontAwesome';
   display: inline-block;
   vertical-align: top;
   padding: 0 5px;
@@ -80,5 +82,42 @@ nav.sociales ul li a:before{
   font-size: 30px;
   color: black;
   -webkit-font-smoothing: antialiased;
-
 }
+.sr-text{
+  display: none;
+}
+nav.sociales li a[href*="facebook.com"]::before{
+  content: '\f09a';
+  } //forma de seleccionar los enlaces
+nav.sociales li a[href*="instagram.com"]::before{
+    content: '\f16d';
+    }
+nav.sociales li a[href*="twitter.com"]::before{
+      content: '\f099';
+      }
+nav.sociales li a[href*="youtube.com"]::before{
+        content: '\f167';
+        }
+div.direccion {
+          display: block;
+          clear: both;
+          padding-top: 10px;
+        }
+div.direccion p{
+  margin: 0px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Navegacion Principal */
+  nav.menu-sitio ul {
+    list-style: none;
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  nav.menu-sitio ul li{
+    display: table-cell;
+    width: 1%;
+  }

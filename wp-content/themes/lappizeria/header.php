@@ -39,7 +39,6 @@
 
           </header>
           <div class="contenedor">
-          <nav class="menu-sitio">
             <div class="contenedor-navegacion">
               <?php
                 $args = array (
@@ -50,6 +49,4 @@
                 wp_nav_menu ( $args );
                ?>
             </div>
-
-          </nav>
           </div><!-- /contenedor -->

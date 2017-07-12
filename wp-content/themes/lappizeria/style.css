@@ -25,13 +25,60 @@ html{
 }
 
 /** Encabezadp **/
-header.encabezado-sitio{
+header.encabezado-sitio {
   border-bottom: 1px solid #c1c1c1;
 }
 div.logo{
-  text-align: center;
+  text-align: left;
 
 }
 img.logotipo{
   width: 250px;
+}
+@media only screen and (min-width:768px){
+  div.logo{
+    text-align: center;
+
+  }
+  header.encabezado-sitio .contenedor{
+    position: relative;
+  }
+  .informacion-encabezado{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  div.direccion p{
+    text-align: right;
+  }
+  nav.sociales ul{
+    float: right;
+  }
+}
+@media only screen and (min-width:992px){
+  div.logo{
+    text-align: center;
+
+  }
+}
+/*** menu redes sociales ***/
+nav.sociales ul{
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+nav.sociales ul li {
+  position: relative;
+  display: inline-block;
+}
+nav.sociales ul li a:before{
+  font-family: 'FontAwasome';
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  content: '\f08e';
+  font-size: 30px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+
 }

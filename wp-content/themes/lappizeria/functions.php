@@ -5,11 +5,13 @@
 function lapizzeria_styles(){
   //Normalizacion de css para stadard de navegadores
   wp_register_style('normalize', get_template_directory_uri() . '/css/normalize.css',  array(), '5.0.0');
+  wp_register_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css',  array(), '4.7.0');//Fon awasome
   //reigistro de estilos ('nombre', funcion que obtiene el directorio en wordpressl, 'rutadespues de directorioraiz', 'array de invocacion(dependincia)', 'version')
   //enlace de hola de estilos personalizada
   wp_register_style('style', get_template_directory_uri() . '/style.css',  array('normalize'), '1.0');
   //invocacion de las hojas de estilos
   wp_enqueue_style('normalize');
+  wp_enqueue_style('font-awesome');
   wp_enqueue_style('style');
 }
 

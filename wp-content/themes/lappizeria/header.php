@@ -8,9 +8,8 @@
     <?php wp_head() ?>
   </head>
   <body>
-
+        <header class="encabezado-sitio">
           <div class="contenedor">
-            <header calss="encabezado-sitio">
               <div class="logo">
                 <a href="<?php echo esc_url( home_url('/') ); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" class="logotipo">
@@ -21,8 +20,8 @@
                   <?php $args = array(
                     'theme_location' => 'social-menu',
                     'container' => 'nav',
-                    'container_class' => 'menu-social',
-                    'container_id' => 'menu-social',
+                    'container_class' => 'sociales',
+                    'container_id' => 'sociales',
                     'link_before' => '<span class="sr-text">',
                     'link_after' => '</span>'
                   );
@@ -33,11 +32,13 @@
                   <p>av algo</p>
                   <p>num algomas</p>
                 </div>
-              </div>
+              </div><!-- /inf encabezado-sitio -->
+              </div><!-- /contenedor -->
 
 
 
           </header>
+          <div class="contenedor">
           <nav class="menu-sitio">
             <div class="contenedor-navegacion">
               <?php

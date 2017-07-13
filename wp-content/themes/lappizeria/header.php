@@ -43,7 +43,7 @@
               <a href="#" class="mobile">Menu<i class="fa fa-bars" aria-hidden="true"></i></a>
             </div>
           </div>
-
+          <nav class="menu-sitio">
             <div class="contenedor navegacion">
               <?php
                 $args = array (
@@ -55,3 +55,4 @@
                ?>
 
           </div><!-- /contenedor -->
+        </nav>
